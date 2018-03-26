@@ -28,12 +28,12 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 
     // open .tsc file.
-    disposable = vscode.commands.registerCommand('extension.ionSwitchTSC', () => {
+    disposable = vscode.commands.registerCommand('extension.ionSwitchTS', () => {
         let textEditor = vscode.window.activeTextEditor;
         if (textEditor) {
             const fullPath: string = textEditor.document.fileName;
             // open
-            const tscFile: string = fullPath.replace(/^(\.html)/g, ".tsc");
+            const tscFile: string = fullPath.replace(/^(\.html)/g, ".ts");
             vscode.workspace.openTextDocument(tscFile).then(function(TextDocument){
                 vscode.window.showTextDocument(TextDocument, vscode.ViewColumn.One, false);
             });
