@@ -13,12 +13,11 @@ export function activate(context: vscode.ExtensionContext) {
 
     // switch .html file.
     let disposable = vscode.commands.registerCommand('extension.ionSwitchHTML', () => {
-        vscode.window.showInformationMessage('Hello World!');
         let textEditor = vscode.window.activeTextEditor;
         if (textEditor) {
             const fullPath: string = textEditor.document.fileName;
-            // open
-            const htmlFile: string = fullPath.replace(/^(\.tsc)/g, ".html");
+            // ts -> html
+            const htmlFile: string = fullPath.replace(/\.ts/g, ".html");
             vscode.workspace.openTextDocument(htmlFile).then(function(TextDocument){
                 vscode.window.showTextDocument(TextDocument, vscode.ViewColumn.One, false);
             });
@@ -27,13 +26,13 @@ export function activate(context: vscode.ExtensionContext) {
 
     context.subscriptions.push(disposable);
 
-    // switch .tsc file.
+    // switch .ts file.
     disposable = vscode.commands.registerCommand('extension.ionSwitchTS', () => {
         let textEditor = vscode.window.activeTextEditor;
         if (textEditor) {
             const fullPath: string = textEditor.document.fileName;
-            // open
-            const tscFile: string = fullPath.replace(/^(\.html)/g, ".ts");
+            // html -> ts
+            const tscFile: string = fullPath.replace(/\.html/g, ".ts");
             vscode.workspace.openTextDocument(tscFile).then(function(TextDocument){
                 vscode.window.showTextDocument(TextDocument, vscode.ViewColumn.One, false);
             });
