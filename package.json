@@ -4,6 +4,10 @@
     "description": "Switch .html and .ts for Ionic",
     "version": "0.0.1",
     "publisher": "shinriyo",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/shinriyo/ionic-switch.git"
+    },
     "engines": {
         "vscode": "^1.21.0"
     },
