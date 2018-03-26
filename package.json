@@ -11,14 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.ionSwitchHTML",
+        "onCommand:extension.ionSwitchTS"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.ionSwitchHTML",
+                "title": "Switch .html file"
+            },
+            {
+                "command": "extension.ionSwitchTS",
+                "title": "Switch .ts file"
             }
         ]
     },

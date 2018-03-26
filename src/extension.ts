@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "ionic-switch" is now active!');
 
-    // open .html file.
+    // switch .html file.
     let disposable = vscode.commands.registerCommand('extension.ionSwitchHTML', () => {
         vscode.window.showInformationMessage('Hello World!');
         let textEditor = vscode.window.activeTextEditor;
@@ -27,7 +27,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     context.subscriptions.push(disposable);
 
-    // open .tsc file.
+    // switch .tsc file.
     disposable = vscode.commands.registerCommand('extension.ionSwitchTS', () => {
         let textEditor = vscode.window.activeTextEditor;
         if (textEditor) {
