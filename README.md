@@ -1,8 +1,8 @@
-# IonicSwitch
+# Angular Switch
 
 ## Features
 
-It switch .html and .tc file like Xcode's header and source code swith fieatures.
+It switch .html and .tc file like Xcode's header and source code swith features.
 
 Recoomend shortcuts.
 
@@ -32,6 +32,11 @@ Switch to TypeScript file ... Just run shortcut command + control + ↓
 Nothing yet. Report my github's Issue.
 
 ## Release Notes
+
+### 0.0.2
+
+Fix typo of README.
+Ionic Switch -> Angular Switch
 
 ### 0.0.1
 

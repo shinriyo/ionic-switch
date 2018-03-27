@@ -1,7 +1,7 @@
 {
     "name": "ionic-switch",
-    "displayName": "Ionic Switch",
-    "description": "Switch .html and .ts for Ionic",
+    "displayName": "Angular Switch",
+    "description": "Switch .html and .ts for Angular/Ionic",
     "icon": "images/ionic-switch.png",
     "version": "0.0.1",
     "publisher": "shinriyo",
