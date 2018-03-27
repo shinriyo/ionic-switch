@@ -3,7 +3,7 @@
     "displayName": "Angular Switch",
     "description": "Switch .html and .ts for Angular/Ionic",
     "icon": "images/ionic-switch.png",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "shinriyo",
     "repository": {
       "type": "git",
